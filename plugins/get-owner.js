@@ -23,7 +23,7 @@ cmd({
       'VERSION:3.0\n' +
       `FN:${name}\n` +
       `ORG: TEDDY-XMD;\n` +
-      `TEL;type=CELL;type=VOICE;waid=${number}:${'+' + number}\n` +
+      `TEL;type=CELL;type=VOICE;waid=${number}:${'+' number}\n` +
       'END:VCARD';
 
     await sock.sendMessage(from, {
