@@ -58,7 +58,7 @@ cmd({
         });
 
         // Construct Menu String
-        let menu = `╭══〘 *${monospace(config.BOT_NAME || 'POP KID-MD')}* 〙══⊷
+        let menu = `╭══〘 *${monospace(config.BOT_NAME || 'TEDDY-XMD')}* 〙══⊷
 ┃❍ *Mode:* ${monospace(mode)}
 ┃❍ *User:* ${monospace(userName)}
 ┃❍ *Plugins:* ${monospace(totalCommands)}
@@ -78,7 +78,7 @@ cmd({
             menu += `╰━━━━━━━━━━━━━━━━━⊷`;
         }
 
-        menu += `\n\n> *${config.BOT_NAME || 'POP KID-MD'}* © 2026 🇰🇪`;
+        menu += `\n\n> *${config.BOT_NAME || 'TEDDY XMD'}* © 2026 🇰🇪`;
 
         // Efficient Send
         await conn.sendMessage(from, {
@@ -88,10 +88,10 @@ cmd({
                 mentionedJid: [sender],
                 forwardingScore: 1,
                 externalAdReply: {
-                    title: 'POP KID-MD V2 ADVANCED',
-                    body: 'POPKID TECH',
+                    title: 'TEDDY-XMD',
+                    body: 'TEDDY TECH',
                     thumbnail: menuImageBuffer,
-                    sourceUrl: 'https://whatsapp.com/channel/0029VacgxK96hENmSRMRxx1r',
+                    sourceUrl: 'https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n',
                     mediaType: 1,
                     renderLargerThumbnail: true
                 }

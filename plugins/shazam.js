@@ -53,8 +53,8 @@ cmd({
 ┃❍ *Artist:* ${artists}
 ╰═════════════════════════⊷
 
-> *${config.BOT_NAME || 'POP KID-MD'}*
-> Powered by Deline API
+> *${config.BOT_NAME || 'TEDDY XMD'}*
+> Powered by Teddy Tech APIs 
     `.trim();
 
     await conn.sendMessage(from, {

@@ -49,7 +49,7 @@ cmd({
 
 🔗 ${user.html_url}
 
-🌸 _Popkid MD_`;
+🌸 _TEDDY XMD_`;
 
             await conn.sendMessage(from, {
                 image: { url: user.avatar_url },

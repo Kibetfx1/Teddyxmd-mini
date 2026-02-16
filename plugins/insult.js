@@ -29,11 +29,11 @@ async (conn, mek, m, { from, reply }) => {
 
         // rhyming endings
         const rhymes = [
-            `You talk too much, dusty mid,\nBow down now to *Popkid*! 🎤🔥`,
-            `Brain on sleep, thoughts forbid,\nAnother pack smoked by *Popkid*! ⚡`,
-            `You stepped wrong, your fate is sealed,\nRoasted clean by *Popkid*! 💀`,
-            `Trying to flex? Don’t kid,\nYou got humbled by *Popkid*! 👑`,
-            `Weak response, childish bid,\nLearn your place — *Popkid*! 😈`
+            `You talk too much, dusty mid,\nBow down now to *Teddy*! 🎤🔥`,
+            `Brain on sleep, thoughts forbid,\nAnother pack smoked by *Teddy*! ⚡`,
+            `You stepped wrong, your fate is sealed,\nRoasted clean by *Teddy*! 💀`,
+            `Trying to flex? Don’t kid,\nYou got humbled by *Teddy*! 👑`,
+            `Weak response, childish bid,\nLearn your place — *Teddy*! 😈`
         ];
 
         const randomRhyme = rhymes[Math.floor(Math.random() * rhymes.length)];

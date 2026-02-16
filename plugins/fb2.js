@@ -34,7 +34,7 @@ cmd({
 ┃❍ *Source:* Facebook
 ╰═════════════════════════⊷
 
-> *${config.BOT_NAME || 'POP KID-MD'}*
+> *${config.BOT_NAME || 'TEDDY-XMD'}*
 > Powered by Starlight API
     `.trim();
 

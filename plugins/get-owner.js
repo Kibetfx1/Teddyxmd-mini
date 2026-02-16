@@ -10,7 +10,7 @@ cmd({
   filename: __filename
 }, async (sock, m, msg, { from }) => {
   try {
-    const number = config.OWNER_NUMBER; // e.g. "923493114170"
+    const number = config.OWNER_NUMBER; "254799963583"// e.g. "923493114170"
     const name = config.OWNER_NAME || "Bot Owner";
 
     // React with loading emoji
@@ -22,7 +22,7 @@ cmd({
       'BEGIN:VCARD\n' +
       'VERSION:3.0\n' +
       `FN:${name}\n` +
-      `ORG:mᥱrᥴᥱძᥱs;\n` +
+      `ORG: TEDDY-XMD;\n` +
       `TEL;type=CELL;type=VOICE;waid=${number}:${'+' + number}\n` +
       'END:VCARD';
 

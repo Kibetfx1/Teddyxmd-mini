@@ -21,7 +21,7 @@ cmd({
         // Get unique categories count
         const categories = [...new Set(Object.values(commands).map(c => c.category))]
 
-        let menuText = `*┏────〘 popkid xtr 〙───⊷*
+        let menuText = `*┏────〘 TEDDY-XMD 〙───⊷*
 *┃* *🛠️ BOT INFORMATION*
 *┃* • 🤖 Bot Name: ${config.BOT_NAME}
 *┃* • 👑 Owner: ${config.OWNER_NAME}
@@ -71,7 +71,7 @@ cmd({
         await conn.sendMessage(
             from,
             {
-                image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/kiy0hl.jpg' },
+                image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/13nyhx.jpg' },
                 caption: menuText,
                 contextInfo: {
                     mentionedJid: [m.sender],

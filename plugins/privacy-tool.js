@@ -15,7 +15,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isCreator, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let privacyMenu = `*┏────〘 popkid 〙───⊷*
+        let privacyMenu = `*┏────〘 TEDDY-XMD 〙───⊷*
 *┃* • blocklist - View blocked users
 *┃* • getbio - Get user's bio
 *┃* • setppall - Set profile pic privacy
@@ -39,15 +39,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/kiy0hl.jpg` }, // Replace with privacy-themed image if available
+                image: { url: `https://files.catbox.moe/13nyhx.jpg` }, // Replace with privacy-themed image if available
                 caption: privacyMenu,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363289379419860@newsletter',
-                        newsletterName: "popkid",
+                        newsletterJid: '120363421104812135@newsletter',
+                        newsletterName: "TEDDY-XMD",
                         serverMessageId: 143
                     }
                 }

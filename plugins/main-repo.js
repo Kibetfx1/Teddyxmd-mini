@@ -16,7 +16,7 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/popkidmd/POPKID-MD';
+    const githubRepoURL = 'https://github.com/Teddytech1/TEDDY-XMD';
 
     try {
         // Extract username and repo name from the URL
@@ -29,9 +29,9 @@ async (conn, mek, m, { from, reply }) => {
 
         // Format the repository information in new stylish format
         const formattedInfo = `
-*┏────〘 *POPKID* 〙───⊷*
+*┏────〘 *TEDDY XMD* 〙───⊷*
 *┃* *📌 Repository Name:* ${repoData.name}
-*┃* *👑 Owner:* ᴘᴏᴘᴋɪᴅ ᴋᴇ
+*┃* *👑 Owner:* Teddy
 *┃* *⭐ Stars:* ${repoData.stargazers_count}
 *┃* *⑂ Forks:* ${repoData.forks_count}
 *┃* *📝 Description:* ${repoData.description || '*World Best WhatsApp Bot powered by popkid*'}
@@ -41,15 +41,15 @@ async (conn, mek, m, { from, reply }) => {
 
         // Send an image with the formatted info as a caption
         await conn.sendMessage(from, {
-            image: { url: `https://files.catbox.moe/kiy0hl.jpg` }, // Replace with your image URL
+            image: { url: `https://files.catbox.moe/13nyhx.jpg` }, // Replace with your image URL
             caption: formattedInfo,
             contextInfo: { 
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363289379419860@newsletter',
-                    newsletterName: 'popkid xtr',
+                    newsletterJid: '120363421104812135@newsletter',
+                    newsletterName: 'TEDDY XMD',
                     serverMessageId: 143
                 }
             }
