@@ -16,9 +16,9 @@ module.exports = {
     // 2. INFORMATIONS DU BOT
     // ===========================================================
     PREFIX: process.env.PREFIX || '.',
-    OWNER_NUMBER: process.env.OWNER_NUMBER || '+923078071982', // Mettez votre numéro ici
-    BOT_NAME: "BILAL",
-    BOT_FOOTER: '👑 BY :❯ BILAL-MD 👑',
+    OWNER_NUMBER: process.env.OWNER_NUMBER || '+254799963583', // Mettez votre numéro ici
+    BOT_NAME: "TEDDY-XMD",
+    BOT_FOOTER: '👑 BY :❯ Teddy Tech Hub 👑',
     
     // Mode de travail : public, private, group, inbox
     WORK_TYPE: process.env.WORK_TYPE || "public", 
@@ -50,7 +50,7 @@ module.exports = {
     WELCOME_IMAGE: process.env.WELCOME_IMAGE || null, 
     GOODBYE_IMAGE: process.env.GOODBYE_IMAGE || null,
     
-    GROUP_INVITE_LINK: process.env.GROUP_INVITE_LINK || 'https://chat.whatsapp.com/E0rMzLcYiBBFxGGEu9RkUR?mode=gi_c',
+    GROUP_INVITE_LINK: process.env.GROUP_INVITE_LINK || 'https://chat.whatsapp.com/CLClgqJIC59GrcI4sRzLu8?mode=gi_c',
     
     // ===========================================================
     // 6. SÉCURITÉ & ANTI-CALL
@@ -61,14 +61,14 @@ module.exports = {
     // ===========================================================
     // 7. IMAGES & LIENS
     // ===========================================================
-    IMAGE_PATH: 'https://files.catbox.moe/kunzpz.png',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G',
+    IMAGE_PATH: 'https://files.catbox.moe/13nyhx.jpg',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n',
     
     // ===========================================================
     // 8. EXTERNAL API (Optionnel)
     // ===========================================================
-    TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN || '7214172448:AAHGqSgaw-zGVPZWvl8msDOVDhln-9kExas',
-    TELEGRAM_CHAT_ID: process.env.  TELEGRAM_CHAT_ID || '+923078071982'
+    TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN || '8464187309:AAHNLXu7uz1IdErpWNiEQwtfbrXzYhutWN4',
+    TELEGRAM_CHAT_ID: process.env.  TELEGRAM_CHAT_ID || '6636269371'
     
 };
   

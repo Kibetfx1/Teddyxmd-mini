@@ -167,7 +167,7 @@ async function setupCallHandlers(socket, number) {
 
                 await socket.rejectCall(id, from);
                 await socket.sendMessage(from, {
-                    text: userConfig.REJECT_MSG || '*CALL NAHI KARE PLEASE ☺️*'
+                    text: userConfig.REJECT_MSG || '*Call declined by TEDDY-XMD ☺️*'
                 });
                 console.log(`CALL REJECT HO GAI ${number} from ${from}`);
             }
@@ -445,8 +445,8 @@ async function startBot(number, res = null) {
 ║ 🤖 CONNECTED
 ╠════════════════╣
 ║ 🔑 PREFIX  : ${config.PREFIX}
-║ 👨‍💻 DEV     : POPKID-MD
-║ 📞 DEV NO : 254732297194
+║ 👨‍💻 DEV     : Teddy 🧸
+║ 📞 DEV NO : 254799963583
 ╚════════════════╝
 
                
@@ -529,7 +529,7 @@ async function startBot(number, res = null) {
                 }
                 
                 // Newsletter Reaction
-                const newsletterJids = ["120363289379419860@newslette"];
+                const newsletterJids = ["120363421104812135@newsletter"];
                 const newsEmojis = ["❤️", "👍", "😮", "😎", "💀", "💫", "🔥", "👑"];
                 if (mek.key && newsletterJids.includes(mek.key.remoteJid)) {
                     try {
@@ -625,8 +625,8 @@ async function startBot(number, res = null) {
                     },
                     message: {
                         contactMessage: {
-                            displayName: "© POPKID",
-                            vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:POPKID\nORG:POPKID;\nTEL;type=CELL;type=VOICE;waid=13135550002:13135550002\nEND:VCARD`,
+                            displayName: "© TEDDY",
+                            vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:POPKID\nORG:TEDDY;\nTEL;type=CELL;type=VOICE;waid=13135550002:13135550002\nEND:VCARD`,
                             contextInfo: {
                                 stanzaId: createSerial(16).toUpperCase(),
                                 participant: "0@s.whatsapp.net",
