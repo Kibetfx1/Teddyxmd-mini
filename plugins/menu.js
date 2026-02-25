@@ -11,11 +11,11 @@ let menuImageBuffer = null;
 try {
     menuImageBuffer = fs.readFileSync(menuImagePath);
 } catch (e) {
-    console.log("TEDDY-XMD PIC NAHI MILI IS LIE JUST MENU TEXT SEND HO RAHA HAI");
+    console.log("Menu image not found, will send text only.");
 }
 
 // Helpers
-const monospace = (text) => `*${text}*`;
+const monospace = (text) => `\`${text}\``;
 const formatSize = (bytes) => {
     if (bytes >= 1073741824) return (bytes / 1073741824).toFixed(1) + 'GB';
     return (bytes / 1048576).toFixed(1) + 'MB';
@@ -30,8 +30,8 @@ const formatUptime = (seconds) => {
 
 cmd({
     pattern: 'menu',
-    alias: ['help', 'allmenu', "m", "list"],
-    react: '👑',
+    alias: ['help', 'allmenu'],
+    react: '✅',
     category: 'main',
     filename: __filename,
     desc: 'Show optimized main menu'
@@ -58,42 +58,30 @@ cmd({
         });
 
         // Construct Menu String
-        let menu = `*╭══〘 👑 TEDDY-XMD 👑 〙══⊷*
-*┃👑 MODE :❯* ${monospace(mode)}
-*┃👑 USER :❯* ${monospace(userName)}
-*┃👑 COMMANDS :❯* ${monospace(totalCommands)}
-*┃👑 UPTIME :❯* ${monospace(uptime)}
-*┃👑 DATE :❯* ${monospace(date)}
-*┃👑 URAM :❯* ${monospace(ram)}
-*┃👑 SPEED :❯ ${monospace(Math.floor(Math.random() * 50) + 10 + 'MS')}
+        let menu = `╭══〘 *${monospace(config.BOT_NAME || 'TEDDY-XMD MINI')}* 〙══⊷
+┃❍ *Mode:* ${monospace(mode)}
+┃❍ *User:* ${monospace(userName)}
+┃❍ *Plugins:* ${monospace(totalCommands)}
+┃❍ *Uptime:* ${monospace(uptime)}
+┃❍ *Date:* ${monospace(date)}
+┃❍ *RAM:* ${monospace(ram)}
+┃❍ *Ping:* ${monospace(Math.floor(Math.random() * 50) + 10 + 'ms')}
+┃❍ *Channel:* https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n 
 ╰═════════════════⊷
 
-*👑 COMMANDS LIST 👑*`;
+
+*Command List ⤵*`;
 
         for (const category in commandsByCategory) {
-            menu += `\n\n*╭━━━━❮* 👑 ${monospace(category)} 👑 *❯━⊷*\n`;
+            menu += `\n\n╭━━━━❮ *${monospace(category)}* ❯━⊷\n`;
             commandsByCategory[category].sort().forEach(cmdName => {
-                menu += `┃👑 ${monospace(config.PREFIX + cmdName)}\n`;
+                menu += `┃✞︎ ${monospace(config.PREFIX + cmdName)}\n`;
             });
-            menu += `*╰━━━━━━━━━━━━━━━━━⊷*`;
+            menu += `╰━━━━━━━━━━━━━━━━━⊷`;
         }
 
-        menu += `
-*👑 CLICK HERE FOR HELP 👑*
+        menu += `\n\n> *${config.BOT_NAME || 'TEDDY-XMD'}* © 2026 🇰🇪`;
 
-*👑 DEVELOPER 👑*
-https://t.me/xdbot1 
-
-*👑 SUPPORT CHANNEL 👑*
-https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n
-
-*👑 SUPPORT GROUP 👑*
-https://chat.whatsapp.com/CLClgqJIC59GrcI4sRzLu8?mode=gi_c
-
-*👑 SIMPLE WHATSAPP BOT 👑*
-*👑 MADE BY TEDDY 👑*
-`;
-        menu = menu.toUpperCase();
         // Efficient Send
         await conn.sendMessage(from, {
             image: menuImageBuffer ? { url: menuImagePath } : { url: 'https://via.placeholder.com/500' },
@@ -102,8 +90,8 @@ https://chat.whatsapp.com/CLClgqJIC59GrcI4sRzLu8?mode=gi_c
                 mentionedJid: [sender],
                 forwardingScore: 1,
                 externalAdReply: {
-                    title: '© Teddy',
-                    body: 'MADE BY TEDDY',
+                    title: 'TEDDY V2 ADVANCED',
+                    body: 'TEDDY TECH',
                     thumbnail: menuImageBuffer,
                     sourceUrl: 'https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n',
                     mediaType: 1,
@@ -114,6 +102,6 @@ https://chat.whatsapp.com/CLClgqJIC59GrcI4sRzLu8?mode=gi_c
 
     } catch (e) {
         console.error(e);
-        reply('MENU SHOW NAHI HO RAHA BILAL SIR MENU ERROR FIX KR DE GE ISKO 😊');
+        reply('❌ Menu processing error.');
     }
 });
