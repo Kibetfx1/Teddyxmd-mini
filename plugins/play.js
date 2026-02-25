@@ -8,7 +8,7 @@ module.exports = {
   run: async ({ trashcore, m, args, xreply, chat }) => {
     try {
       if (!args.length) {
-        return xreply("🎵 Please provide a song name\nExample: `.play Faded`");
+        return xreply("🎵 Please provide a song name\nExample: `.play i love teddy`");
       }
 
       const query = args.join(" ").slice(0, 100);
