@@ -16,7 +16,7 @@ module.exports = {
     // 2. INFORMATIONS DU BOT
     // ===========================================================
     PREFIX: process.env.PREFIX || '.',
-    OWNER_NUMBER: process.env.OWNER_NUMBER || '+254799963583', // Mettez votre numéro ici
+    OWNER_NUMBER: process.env.OWNER_NUMBER || '254799963583', // Mettez votre numéro ici
     BOT_NAME: "TEDDY-XMD",
     BOT_FOOTER: '👑 BY :❯ Teddy Tech Hub 👑',
     
